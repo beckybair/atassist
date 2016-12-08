@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @note.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @note.date.strftime("%B %d @ %I:%M %p") %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @note.note %>
+</p>
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %> |
+<%= link_to 'Main', welcome_index_path %>
