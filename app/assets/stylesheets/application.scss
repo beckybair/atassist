@@ -1,0 +1,131 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ */
+
+// Custom bootstrap variables must be set or imported before bootstrap itself.
+// import bootstrap-sprockets before bootstrap if using bootstrap >= 3.2
+//@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'bootstrap-datetimepicker';
+
+// =====================================
+
+html,
+body {
+  font-family: 'Helvetica', sans-serif;
+  background: #0A5E8B;
+  color: #BABDBF;
+}
+
+h1, h2 {
+  font-family: 'Georgia', serif;
+}
+
+header {
+  background: #0A5E8B;
+  color: #BABDBF;
+  text-align: center;
+  margin-top: 52px;
+}
+
+
+/* Login Screen */
+
+#container {
+  width: 600px;
+  margin: 66px auto;
+}
+
+form {
+  margin-top: 40px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: solid 1px #BABDBF;
+  border-top: none;
+  display: block;
+  font-size: 14px;
+  color: #777;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  color: #BABDBF;
+  text-align: center;
+}
+
+input[type="submit"] {
+  background: #ffffff;
+  height: 40px;
+  border: solid 1px #777;
+  padding: 0 40px;
+  color: #8b9093;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  border-color: #444;
+}
+
+input[type="submit"]:active {
+  border-color: #111;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: #babdbf;
+  font-style: italic;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+  font-style: italic;
+}
+
+/* Main */
+
+.main {
+  width: 210px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+a {
+  text-decoration: none;
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.button {
+  background: #ffffff;
+  height: 40px;
+  border: solid 1px #777;
+  padding: 0 40px;
+  color: #8b9093;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}

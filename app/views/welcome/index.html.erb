@@ -1,6 +1,19 @@
-<h1>Welcome Page</h1>
-<p>Testing</p>
+<header>
+  <h2>Main Menu</h2>
+</header><!-- header -->
 
-<%= link_to 'Notes', notes_path %>
-
+<section id="container">
+  <div class="main">
+    <%= link_to 'Notes', notes_path, :type => "button", :class => "button" %>
+  </div>
+  <div class="main">
+    <a href="" type="button" class="button">Evaluations</a>
+  </div>
+  <div class="main">
+    <a href="" type="button" class="button">WeatherBug Link</a>
+  </div>
+  <div class="main">
+    <a href="utilities.html" type="button" class="button">Utilities</a>
+  </div>
+</section><!-- #container -->
 
