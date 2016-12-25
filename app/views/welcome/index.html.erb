@@ -2,18 +2,17 @@
   <h2>Main Menu</h2>
 </header><!-- header -->
 
-<section id="container">
+<section class="container">
   <div class="main">
     <%= link_to 'Notes', notes_path, :type => "button", :class => "button" %>
   </div>
   <div class="main">
-    <a href="" type="button" class="button">Evaluations</a>
+    <%= link_to 'Evaluations', evaluations_path, :type => "button", :class => "button" %>
   </div>
   <div class="main">
-    <a href="" type="button" class="button">WeatherBug Link</a>
+    <a href="http://weather.weatherbug.com/" type="button" class="button">WeatherBug Link</a>
   </div>
   <div class="main">
     <a href="utilities.html" type="button" class="button">Utilities</a>
   </div>
 </section><!-- #container -->
-

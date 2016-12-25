@@ -10,10 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161207010427) do
+ActiveRecord::Schema.define(version: 20161209025526) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "evaluations", force: :cascade do |t|
+    t.date     "date"
+    t.time     "time"
+    t.text     "event"
+    t.text     "name"
+    t.text     "team"
+    t.text     "parent"
+    t.text     "email"
+    t.text     "bodypart"
+    t.boolean  "left"
+    t.boolean  "right"
+    t.text     "subjective"
+    t.text     "visual"
+    t.text     "palpation"
+    t.text     "rom"
+    t.text     "mmt"
+    t.text     "neurological"
+    t.text     "specialtests"
+    t.text     "functionaltesting"
+    t.text     "assessment"
+    t.text     "plan"
+    t.boolean  "rice"
+    t.boolean  "taping"
+    t.boolean  "mdreferral"
+    t.boolean  "crutches"
+    t.boolean  "instruction"
+    t.boolean  "screen"
+    t.boolean  "erreferral"
+    t.text     "hospitalname"
+    t.boolean  "notifiedparent"
+    t.text     "whomnotified"
+    t.datetime "datetime"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "notes", force: :cascade do |t|
     t.text     "name"

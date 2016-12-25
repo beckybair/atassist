@@ -13,119 +13,48 @@
 
 // Custom bootstrap variables must be set or imported before bootstrap itself.
 // import bootstrap-sprockets before bootstrap if using bootstrap >= 3.2
-//@import 'bootstrap-sprockets';
+@import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'bootstrap-datetimepicker';
+@import 'variables';
+@import 'welcome';
+@import 'notes';
+@import 'evaluations';
 
 // =====================================
+// Application - Global
 
 html,
 body {
-  font-family: 'Helvetica', sans-serif;
-  background: #0A5E8B;
-  color: #BABDBF;
+  font-family: $font-stack;
+  background: $background;
+  color: $mainFontColor;
 }
 
 h1, h2 {
-  font-family: 'Georgia', serif;
+  font-family: $header-font-stack;
+  text-align: center;
 }
 
 header {
-  background: #0A5E8B;
-  color: #BABDBF;
-  text-align: center;
+  background: $background;
+  color: $mainFontColor;
   margin-top: 52px;
 }
 
-
-/* Login Screen */
-
-#container {
-  width: 600px;
-  margin: 66px auto;
+td {
+  padding-right: 10px;
 }
 
-form {
-  margin-top: 40px;
+td a {
+  color: white;
 }
 
-input[type="text"],
-input[type="password"] {
-  padding: 10px;
-  margin: auto;
-  margin-bottom: 20px;
-  border: solid 1px #BABDBF;
-  border-top: none;
-  display: block;
-  font-size: 14px;
-  color: #777;
-  border-radius: 5px;
-}
-
-label {
-  display: block;
-  color: #BABDBF;
-  text-align: center;
-}
-
-input[type="submit"] {
-  background: #ffffff;
-  height: 40px;
-  border: solid 1px #777;
-  padding: 0 40px;
-  color: #8b9093;
-  display: block;
-  margin: 20px auto;
-  border-radius: 5px;
-}
-
-input[type="submit"]:hover {
-  cursor: pointer;
-  border-color: #444;
-}
-
-input[type="submit"]:active {
-  border-color: #111;
-}
-
-footer {
-  text-align: center;
-}
-
-footer a {
-  color: #babdbf;
-  font-style: italic;
+td a:hover {
+  color: bisque;
   text-decoration: none;
 }
 
-footer a:hover {
-  color: #ffffff;
-  font-style: italic;
-}
-
-/* Main */
-
-.main {
-  width: 210px;
-  margin: 0 auto;
-  text-align: center;
-  
-}
-
-a {
-  text-decoration: none;
-  height: 40px;
-  line-height: 40px;
-  white-space: nowrap;
-}
-
-.button {
-  background: #ffffff;
-  height: 40px;
-  border: solid 1px #777;
-  padding: 0 40px;
-  color: #8b9093;
-  display: block;
-  margin: 20px auto;
-  border-radius: 5px;
+td a:visted {
+  color: cornflowerblue;
 }

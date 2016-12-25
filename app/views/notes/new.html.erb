@@ -1,6 +1,8 @@
-<h1>New Note</h1>
+<header>
+  <h2>New Note</h2>
+</header><!-- header -->
 
-<%= render 'form', note: @note %>
+  <%= render 'form', note: @note %>
 
-<%= link_to 'Back', notes_path %> |
-<%= link_to 'Main', welcome_index_path %>
+  <%= link_to 'Back', notes_path, :type => "button", :class => "button" %>
+  <%= link_to 'Main', welcome_index_path, :type => "button", :class => "button" %>

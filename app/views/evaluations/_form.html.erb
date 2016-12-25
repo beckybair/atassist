@@ -1,0 +1,172 @@
+<%= form_for(evaluation) do |f| %>
+  <% if evaluation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(evaluation.errors.count, "error") %> prohibited this evaluation from being saved:</h2>
+
+      <ul>
+      <% evaluation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :time %>
+    <%= f.time_select :time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event %>
+    <%= f.text_area :event %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_area :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :team %>
+    <%= f.text_area :team %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parent %>
+    <%= f.text_area :parent %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_area :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bodypart %>
+    <%= f.text_area :bodypart %>
+  </div>
+
+  <div class="field">
+    <%= f.label :left %>
+    <%= f.check_box :left %>
+  </div>
+
+  <div class="field">
+    <%= f.label :right %>
+    <%= f.check_box :right %>
+  </div>
+
+  <div class="field">
+    <%= f.label :subjective %>
+    <%= f.text_area :subjective %>
+  </div>
+
+  <div class="field">
+    <%= f.label :visual %>
+    <%= f.text_area :visual %>
+  </div>
+
+  <div class="field">
+    <%= f.label :palpation %>
+    <%= f.text_area :palpation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rom %>
+    <%= f.text_area :rom %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mmt %>
+    <%= f.text_area :mmt %>
+  </div>
+
+  <div class="field">
+    <%= f.label :neurological %>
+    <%= f.text_area :neurological %>
+  </div>
+
+  <div class="field">
+    <%= f.label :specialtests %>
+    <%= f.text_area :specialtests %>
+  </div>
+
+  <div class="field">
+    <%= f.label :functionaltesting %>
+    <%= f.text_area :functionaltesting %>
+  </div>
+
+  <div class="field">
+    <%= f.label :assessment %>
+    <%= f.text_area :assessment %>
+  </div>
+
+  <div class="field">
+    <%= f.label :plan %>
+    <%= f.text_area :plan %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rice %>
+    <%= f.check_box :rice %>
+  </div>
+
+  <div class="field">
+    <%= f.label :taping %>
+    <%= f.check_box :taping %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mdreferral %>
+    <%= f.check_box :mdreferral %>
+  </div>
+
+  <div class="field">
+    <%= f.label :crutches %>
+    <%= f.check_box :crutches %>
+  </div>
+
+  <div class="field">
+    <%= f.label :instruction %>
+    <%= f.check_box :instruction %>
+  </div>
+
+  <div class="field">
+    <%= f.label :screen %>
+    <%= f.check_box :screen %>
+  </div>
+
+  <div class="field">
+    <%= f.label :erreferral %>
+    <%= f.check_box :erreferral %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hospitalname %>
+    <%= f.text_area :hospitalname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :notifiedparent %>
+    <%= f.check_box :notifiedparent %>
+  </div>
+
+  <div class="field">
+    <%= f.label :whomnotified %>
+    <%= f.text_area :whomnotified %>
+  </div>
+
+  <div class="field">
+    <%= f.label :datetime %>
+    <%= f.datetime_select :datetime %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

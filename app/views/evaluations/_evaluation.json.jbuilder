@@ -1,0 +1,2 @@
+json.extract! evaluation, :id, :date, :time, :event, :name, :team, :parent, :email, :bodypart, :left, :right, :subjective, :visual, :palpation, :rom, :mmt, :neurological, :specialtests, :functionaltesting, :assessment, :plan, :rice, :taping, :mdreferral, :crutches, :instruction, :screen, :erreferral, :hospitalname, :notifiedparent, :whomnotified, :datetime, :created_at, :updated_at
+json.url evaluation_url(evaluation, format: :json)

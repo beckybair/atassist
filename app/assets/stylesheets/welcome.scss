@@ -1,3 +1,103 @@
-// Place all the styles related to the Welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Welcome - Login - Main screens
+/* Login Screen */
+
+.container {
+  position: relative;
+  width: 375px;
+  height: 667px;
+  margin: 66px auto;
+  padding: 20px;
+  border: 1px solid skyblue;
+}
+
+form {
+  margin-top: 40px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: solid 1px $mainFontColor;
+  border-top: none;
+  display: block;
+  font-size: 14px;
+  color: #777;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  color: $mainFontColor;
+  text-align: center;
+  margin-left: -70px;
+}
+
+input[type="submit"] {
+  background: white;
+  height: 40px;
+  border: solid 1px #777;
+  padding: 0 40px;
+  color: #8b9093;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  border-color: #444;
+}
+
+input[type="submit"]:active {
+  border-color: #111;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: $mainFontColor;
+  font-style: italic;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: bisque;
+  font-style: italic;
+}
+
+/* Main */
+
+.main {
+  width: 210px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+a {
+  text-decoration: none;
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.button {
+  background: white;
+  width: 200px;
+  height: 40px;
+  border: solid 1px #777;
+  padding: 0 40px;
+  color: #8b9093;
+  display: inline-block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.button:focus,
+.button:hover {
+  text-decoration: none;
+}

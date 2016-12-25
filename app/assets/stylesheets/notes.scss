@@ -1,3 +1,25 @@
-// Place all the styles related to the Notes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Notes
+
+/* Notes */
+
+textarea {
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+select {
+  margin: auto;
+  display: inline-table;
+}
+
+.btn-index {
+  width: 130px;
+  padding: 0;
+  text-align: center;
+}
+
+.notesBtns {
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Evaluations</h1>
+
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Team</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @evaluations.each do |evaluation| %>
+        <tr>
+          <td><%= evaluation.name %></td>
+          <td><%= evaluation.team %></td>
+          <td><%= evaluation.date.strftime("%B %d") %></td>
+          <td><%= evaluation.time.strftime("%I:%M %p") %></td>
+          <td><%= evaluation.event %></td>
+          <td><%= link_to 'Show', evaluation %></td>
+          <td><%= link_to 'Edit', edit_evaluation_path(evaluation) %></td>
+          <td><%= link_to 'Destroy', evaluation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <div class="notesBtns">
+    <%= link_to 'New Evaluation', new_evaluation_path, :type => "button", :class => "button btn-index" %>
+    <%= link_to 'Main Menu', welcome_index_path, :type => "button", :class => "button btn-index" %>
+  </div>
+</div>

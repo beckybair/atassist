@@ -11,22 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="note-name">
     <%= f.label :name %>
     <%= f.text_area :name %>
   </div>
 
-  <div class="field">
+  <div class="note-date">
     <%= f.label :date %>
     <%= f.datetime_select :date %>
   </div>
 
-  <div class="field">
+  <div class="note-note">
     <%= f.label :note %>
     <%= f.text_area :note %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Save" %>
   </div>
+  
 <% end %>

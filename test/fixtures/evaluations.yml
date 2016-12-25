@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-12-08
+  time: 2016-12-08 20:55:26
+  event: MyText
+  name: MyText
+  team: MyText
+  parent: MyText
+  email: MyText
+  bodypart: MyText
+  left: false
+  right: false
+  subjective: MyText
+  visual: MyText
+  palpation: MyText
+  rom: MyText
+  mmt: MyText
+  neurological: MyText
+  specialtests: MyText
+  functionaltesting: MyText
+  assessment: MyText
+  plan: MyText
+  rice: false
+  taping: false
+  mdreferral: false
+  crutches: false
+  instruction: false
+  screen: false
+  erreferral: false
+  hospitalname: MyText
+  notifiedparent: false
+  whomnotified: MyText
+  datetime: 2016-12-08 20:55:26
+
+two:
+  date: 2016-12-08
+  time: 2016-12-08 20:55:26
+  event: MyText
+  name: MyText
+  team: MyText
+  parent: MyText
+  email: MyText
+  bodypart: MyText
+  left: false
+  right: false
+  subjective: MyText
+  visual: MyText
+  palpation: MyText
+  rom: MyText
+  mmt: MyText
+  neurological: MyText
+  specialtests: MyText
+  functionaltesting: MyText
+  assessment: MyText
+  plan: MyText
+  rice: false
+  taping: false
+  mdreferral: false
+  crutches: false
+  instruction: false
+  screen: false
+  erreferral: false
+  hospitalname: MyText
+  notifiedparent: false
+  whomnotified: MyText
+  datetime: 2016-12-08 20:55:26
