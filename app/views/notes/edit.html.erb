@@ -1,7 +1,10 @@
 <h1>Editing Note</h1>
+<div class="container">
 
-<%= render 'form', note: @note %>
+  <%= render 'form', note: @note %>
 
-<%= link_to 'Show', @note %> |
-<%= link_to 'Back', notes_path %> |
-<%= link_to 'Main', welcome_index_path %>
+  <div class="btns">
+    <%= link_to 'Back', notes_path, :type => "button", :class => "button btn-index" %>
+    <%= link_to 'Main Menu', welcome_index_path, :type => "button", :class => "button btn-index" %>
+  </div>
+</div>

@@ -13,12 +13,16 @@
 
   <div class="field">
     <%= f.label :date %>
-    <%= f.date_select :date %>
+    <div class="dateSelect">
+      <%= f.date_select :date %>
+    </div>
   </div>
 
   <div class="field">
     <%= f.label :time %>
-    <%= f.time_select :time %>
+    <div class="dateSelect">
+      <%= f.time_select :time %>
+    </div>
   </div>
 
   <div class="field">
@@ -37,7 +41,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :parent %>
+    <%= f.label :parent, 'Parent/Guardian' %>
     <%= f.text_area :parent %>
   </div>
 
@@ -47,18 +51,18 @@
   </div>
 
   <div class="field">
-    <%= f.label :bodypart %>
+    <%= f.label :bodypart, 'Body Part' %>
     <%= f.text_area :bodypart %>
   </div>
 
-  <div class="field">
-    <%= f.label :left %>
+  <div class="checkSelect">
     <%= f.check_box :left %>
+    <%= f.label :left %>
   </div>
 
-  <div class="field">
-    <%= f.label :right %>
+  <div class="checkSelect">
     <%= f.check_box :right %>
+    <%= f.label :right %>
   </div>
 
   <div class="field">
@@ -77,12 +81,12 @@
   </div>
 
   <div class="field">
-    <%= f.label :rom %>
+    <%= f.label :rom, 'ROM' %>
     <%= f.text_area :rom %>
   </div>
 
   <div class="field">
-    <%= f.label :mmt %>
+    <%= f.label :mmt, 'MMT' %>
     <%= f.text_area :mmt %>
   </div>
 
@@ -92,12 +96,12 @@
   </div>
 
   <div class="field">
-    <%= f.label :specialtests %>
+    <%= f.label :specialtests, 'Special Tests' %>
     <%= f.text_area :specialtests %>
   </div>
 
   <div class="field">
-    <%= f.label :functionaltesting %>
+    <%= f.label :functionaltesting, 'Functional Testing' %>
     <%= f.text_area :functionaltesting %>
   </div>
 
@@ -111,59 +115,61 @@
     <%= f.text_area :plan %>
   </div>
 
-  <div class="field">
-    <%= f.label :rice %>
+  <div class="checkSelect">
     <%= f.check_box :rice %>
+    <%= f.label :rice, 'R.I.C.E.' %>
   </div>
 
-  <div class="field">
-    <%= f.label :taping %>
+  <div class="checkSelect">
     <%= f.check_box :taping %>
+    <%= f.label :taping %>
   </div>
 
-  <div class="field">
-    <%= f.label :mdreferral %>
+  <div class="checkSelect">
     <%= f.check_box :mdreferral %>
+    <%= f.label :mdreferral, 'MD Referral' %>
   </div>
 
-  <div class="field">
-    <%= f.label :crutches %>
+  <div class="checkSelect">
     <%= f.check_box :crutches %>
+    <%= f.label :crutches %>
   </div>
 
-  <div class="field">
-    <%= f.label :instruction %>
+  <div class="checkSelect">
     <%= f.check_box :instruction %>
+    <%= f.label :instruction %>
   </div>
 
-  <div class="field">
-    <%= f.label :screen %>
+  <div class="checkSelect">
     <%= f.check_box :screen %>
+    <%= f.label :screen %>
   </div>
 
-  <div class="field">
-    <%= f.label :erreferral %>
+  <div class="checkSelect">
     <%= f.check_box :erreferral %>
+    <%= f.label :erreferral, 'ER Referral' %>
   </div>
 
   <div class="field">
-    <%= f.label :hospitalname %>
+    <%= f.label :hospitalname, 'Hospital Name' %>
     <%= f.text_area :hospitalname %>
   </div>
 
-  <div class="field">
-    <%= f.label :notifiedparent %>
+  <div class="checkSelect">
     <%= f.check_box :notifiedparent %>
+    <%= f.label :notifiedparent, 'Notified Parent/Guardian' %>
   </div>
 
   <div class="field">
-    <%= f.label :whomnotified %>
+    <%= f.label :whomnotified, 'Whom Notified' %>
     <%= f.text_area :whomnotified %>
   </div>
 
   <div class="field">
     <%= f.label :datetime %>
-    <%= f.datetime_select :datetime %>
+    <div class="dateSelect">
+      <%= f.datetime_select :datetime %>
+    </div>
   </div>
 
   <div class="actions">

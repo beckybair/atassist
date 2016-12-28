@@ -1,6 +1,11 @@
 <h1>Editing Evaluation</h1>
+<div class="container">
 
-<%= render 'form', evaluation: @evaluation %>
+  <%= render 'form', evaluation: @evaluation %>
 
-<%= link_to 'Show', @evaluation %> |
-<%= link_to 'Back', evaluations_path %>
+  <div class="btns">
+    <%= link_to 'Show', @evaluation, :type => "button", :class => "button btn-index" %>
+    <%= link_to 'Back', evaluations_path, :type => "button", :class => "button btn-index" %>
+    <%= link_to 'Main Menu', welcome_index_path, :type => "button", :class => "button btn-index" %>
+  </div>
+</div>

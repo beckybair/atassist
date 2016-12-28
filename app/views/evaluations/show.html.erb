@@ -1,159 +1,164 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Date:</strong>
-  <%= @evaluation.date %>
-</p>
+  <p>
+    <strong>Date:</strong>
+    <%= @evaluation.date.strftime("%B %d") %>
+  </p>
 
-<p>
-  <strong>Time:</strong>
-  <%= @evaluation.time %>
-</p>
+  <p>
+    <strong>Time:</strong>
+    <%= @evaluation.time.strftime("%I:%M %p") %>
+  </p>
 
-<p>
-  <strong>Event:</strong>
-  <%= @evaluation.event %>
-</p>
+  <p>
+    <strong>Event:</strong>
+    <%= @evaluation.event %>
+  </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @evaluation.name %>
-</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @evaluation.name %>
+  </p>
 
-<p>
-  <strong>Team:</strong>
-  <%= @evaluation.team %>
-</p>
+  <p>
+    <strong>Team:</strong>
+    <%= @evaluation.team %>
+  </p>
 
-<p>
-  <strong>Parent:</strong>
-  <%= @evaluation.parent %>
-</p>
+  <p>
+    <strong>Parent/Guardian:</strong>
+    <%= @evaluation.parent %>
+  </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @evaluation.email %>
-</p>
+  <p>
+    <strong>Email:</strong>
+    <%= @evaluation.email %>
+  </p>
 
-<p>
-  <strong>Bodypart:</strong>
-  <%= @evaluation.bodypart %>
-</p>
+  <p>
+    <strong>Body Part:</strong>
+    <%= @evaluation.bodypart %>
+  </p>
 
-<p>
-  <strong>Left:</strong>
-  <%= @evaluation.left %>
-</p>
+  <p>
+    <strong>Left:</strong>
+    <%= @evaluation.left %>
+  </p>
 
-<p>
-  <strong>Right:</strong>
-  <%= @evaluation.right %>
-</p>
+  <p>
+    <strong>Right:</strong>
+    <%= @evaluation.right %>
+  </p>
 
-<p>
-  <strong>Subjective:</strong>
-  <%= @evaluation.subjective %>
-</p>
+  <p>
+    <strong>Subjective:</strong>
+    <%= @evaluation.subjective %>
+  </p>
 
-<p>
-  <strong>Visual:</strong>
-  <%= @evaluation.visual %>
-</p>
+  <p>
+    <strong>Visual:</strong>
+    <%= @evaluation.visual %>
+  </p>
 
-<p>
-  <strong>Palpation:</strong>
-  <%= @evaluation.palpation %>
-</p>
+  <p>
+    <strong>Palpation:</strong>
+    <%= @evaluation.palpation %>
+  </p>
 
-<p>
-  <strong>Rom:</strong>
-  <%= @evaluation.rom %>
-</p>
+  <p>
+    <strong>ROM:</strong>
+    <%= @evaluation.rom %>
+  </p>
 
-<p>
-  <strong>Mmt:</strong>
-  <%= @evaluation.mmt %>
-</p>
+  <p>
+    <strong>MMT:</strong>
+    <%= @evaluation.mmt %>
+  </p>
 
-<p>
-  <strong>Neurological:</strong>
-  <%= @evaluation.neurological %>
-</p>
+  <p>
+    <strong>Neurological:</strong>
+    <%= @evaluation.neurological %>
+  </p>
 
-<p>
-  <strong>Specialtests:</strong>
-  <%= @evaluation.specialtests %>
-</p>
+  <p>
+    <strong>Special Tests:</strong>
+    <%= @evaluation.specialtests %>
+  </p>
 
-<p>
-  <strong>Functionaltesting:</strong>
-  <%= @evaluation.functionaltesting %>
-</p>
+  <p>
+    <strong>Functional Testing:</strong>
+    <%= @evaluation.functionaltesting %>
+  </p>
 
-<p>
-  <strong>Assessment:</strong>
-  <%= @evaluation.assessment %>
-</p>
+  <p>
+    <strong>Assessment:</strong>
+    <%= @evaluation.assessment %>
+  </p>
 
-<p>
-  <strong>Plan:</strong>
-  <%= @evaluation.plan %>
-</p>
+  <p>
+    <strong>Plan:</strong>
+    <%= @evaluation.plan %>
+  </p>
 
-<p>
-  <strong>Rice:</strong>
-  <%= @evaluation.rice %>
-</p>
+  <p>
+    <strong>R.I.C.E.:</strong>
+    <%= @evaluation.rice %>
+  </p>
 
-<p>
-  <strong>Taping:</strong>
-  <%= @evaluation.taping %>
-</p>
+  <p>
+    <strong>Taping:</strong>
+    <%= @evaluation.taping %>
+  </p>
 
-<p>
-  <strong>Mdreferral:</strong>
-  <%= @evaluation.mdreferral %>
-</p>
+  <p>
+    <strong>MD Referral:</strong>
+    <%= @evaluation.mdreferral %>
+  </p>
 
-<p>
-  <strong>Crutches:</strong>
-  <%= @evaluation.crutches %>
-</p>
+  <p>
+    <strong>Crutches:</strong>
+    <%= @evaluation.crutches %>
+  </p>
 
-<p>
-  <strong>Instruction:</strong>
-  <%= @evaluation.instruction %>
-</p>
+  <p>
+    <strong>Instruction:</strong>
+    <%= @evaluation.instruction %>
+  </p>
 
-<p>
-  <strong>Screen:</strong>
-  <%= @evaluation.screen %>
-</p>
+  <p>
+    <strong>Screen:</strong>
+    <%= @evaluation.screen %>
+  </p>
 
-<p>
-  <strong>Erreferral:</strong>
-  <%= @evaluation.erreferral %>
-</p>
+  <p>
+    <strong>ER Referral:</strong>
+    <%= @evaluation.erreferral %>
+  </p>
 
-<p>
-  <strong>Hospitalname:</strong>
-  <%= @evaluation.hospitalname %>
-</p>
+  <p>
+    <strong>Hospital Name:</strong>
+    <%= @evaluation.hospitalname %>
+  </p>
 
-<p>
-  <strong>Notifiedparent:</strong>
-  <%= @evaluation.notifiedparent %>
-</p>
+  <p>
+    <strong>Notified Parent:</strong>
+    <%= @evaluation.notifiedparent %>
+  </p>
 
-<p>
-  <strong>Whomnotified:</strong>
-  <%= @evaluation.whomnotified %>
-</p>
+  <p>
+    <strong>Whom Notified:</strong>
+    <%= @evaluation.whomnotified %>
+  </p>
 
-<p>
-  <strong>Datetime:</strong>
-  <%= @evaluation.datetime %>
-</p>
+  <p>
+    <strong>Date/Time:</strong>
+    <%= @evaluation.datetime.strftime("%B %d @ %I:%M %p") %>
+  </p>
 
-<%= link_to 'Edit', edit_evaluation_path(@evaluation) %> |
-<%= link_to 'Back', evaluations_path %>
+  <div class="btns">
+    <%= link_to 'Edit', edit_evaluation_path(@evaluation), :type => "button", :class => "button btn-index" %>
+    <%= link_to 'Back', evaluations_path, :type => "button", :class => "button btn-index" %>
+    <%= link_to 'Main Menu', welcome_index_path, :type => "button", :class => "button btn-index" %>
+  </div>
+</div>

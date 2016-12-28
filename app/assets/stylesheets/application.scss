@@ -17,6 +17,7 @@
 @import 'bootstrap';
 @import 'bootstrap-datetimepicker';
 @import 'variables';
+@import 'forms';
 @import 'welcome';
 @import 'notes';
 @import 'evaluations';
@@ -58,3 +59,12 @@ td a:hover {
 td a:visted {
   color: cornflowerblue;
 }
+
+.container {
+  position: relative;
+  width: 95%;
+  margin: 66px auto;
+  padding: 20px;
+  border: 1px solid cornflowerblue;
+}
+

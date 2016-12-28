@@ -1,0 +1,122 @@
+/* Forms */
+
+form {
+  margin-top: 40px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: solid 1px $mainFontColor;
+  border-top: none;
+  display: block;
+  font-size: 14px;
+  color: #777;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  color: $mainFontColor;
+  text-align: center;
+  margin-left: -70px;
+}
+
+input[type="submit"] {
+  background: white;
+  height: 40px;
+  border: solid 1px #777;
+  padding: 0 40px;
+  color: #8b9093;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  border-color: #444;
+}
+
+input[type="submit"]:active {
+  border-color: #111;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: $mainFontColor;
+  font-style: italic;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: bisque;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.button {
+  background: white;
+  width: 200px;
+  height: 40px;
+  border: solid 1px #777;
+  padding: 0 40px;
+  color: #8b9093;
+  display: inline-block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.button:focus,
+.button:hover {
+  text-decoration: none;
+}
+
+textarea {
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.dateSelect {
+  margin: 0 auto 40px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.checkSelect {
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+select {
+  margin: auto;
+  display: inline-table;
+}
+
+.btn-index {
+  width: 130px;
+  padding: 0;
+  text-align: center;
+}
+
+.btns {
+  display: block;
+  text-align: center;
+}
+

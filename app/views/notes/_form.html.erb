@@ -11,17 +11,19 @@
     </div>
   <% end %>
 
-  <div class="note-name">
+  <div class="textField">
     <%= f.label :name %>
     <%= f.text_area :name %>
   </div>
 
-  <div class="note-date">
+  <div class="date">
     <%= f.label :date %>
-    <%= f.datetime_select :date %>
+    <div class="dateSelect">
+      <%= f.datetime_select :date %>
+    </div>
   </div>
 
-  <div class="note-note">
+  <div class="textArea">
     <%= f.label :note %>
     <%= f.text_area :note %>
   </div>
