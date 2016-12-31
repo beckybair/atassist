@@ -20,8 +20,27 @@ input[type="password"] {
 label {
   display: block;
   color: $mainFontColor;
+  padding-left: 15px;
+  text-indent: -15px;
   text-align: center;
   margin-left: -70px;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.checkBoxes {
+  margin: 0 auto 40px;
+  width: 25%;
+}
+
+.checkSelect {
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 input[type="submit"] {
@@ -87,18 +106,11 @@ textarea {
   display: block;
   margin: auto;
   margin-bottom: 40px;
+  border-radius: 5px;
 }
 
 .dateSelect {
   margin: 0 auto 40px;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-}
-
-.checkSelect {
-  margin-left: auto;
-  margin-right: auto;
   width: 25%;
   display: flex;
   justify-content: center;
@@ -120,3 +132,19 @@ select {
   text-align: center;
 }
 
+.glyphicon {
+  color: $background;
+}
+
+.input-group-addon {
+  padding: 10px 0 0 0;
+  color: $mainFontColor;
+  background-color: $background;
+  border: none;
+  font-size: 20px;
+}
+
+.glyphicon-calendar,
+.glyphicon-time {
+  color: $mainFontColor;
+}

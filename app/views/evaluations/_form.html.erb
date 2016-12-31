@@ -11,17 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="date">
     <%= f.label :date %>
-    <div class="dateSelect">
-      <%= f.date_select :date %>
+    <div class="dateSelect input-group date" id="datetimepicker2">
+      <%= f.text_field :date %>
+      <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+      </span>
     </div>
   </div>
 
-  <div class="field">
+  <div class="date">
     <%= f.label :time %>
-    <div class="dateSelect">
-      <%= f.time_select :time %>
+    <div class="dateSelect input-group date" id="datetimepicker3">
+      <%= f.text_field :time %>
+      <span class="input-group-addon">
+        <span class="glyphicon glyphicon-time"></span>
+      </span>
     </div>
   </div>
 
@@ -55,14 +61,16 @@
     <%= f.text_area :bodypart %>
   </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :left %>
-    <%= f.label :left %>
-  </div>
+  <div class="checkBoxes">
+    <div class="checkSelect">
+      <%= f.label :left %>
+      <%= f.check_box :left %>
+    </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :right %>
-    <%= f.label :right %>
+    <div class="checkSelect">
+      <%= f.label :right %>
+      <%= f.check_box :right %>
+    </div>
   </div>
 
   <div class="field">
@@ -115,39 +123,41 @@
     <%= f.text_area :plan %>
   </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :rice %>
-    <%= f.label :rice, 'R.I.C.E.' %>
-  </div>
+  <div class="checkBoxes">
+    <div class="checkSelect">
+      <%= f.label :rice, 'R.I.C.E.' %>
+      <%= f.check_box :rice %>
+    </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :taping %>
-    <%= f.label :taping %>
-  </div>
+    <div class="checkSelect">
+      <%= f.label :taping %>
+      <%= f.check_box :taping %>
+    </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :mdreferral %>
-    <%= f.label :mdreferral, 'MD Referral' %>
-  </div>
+    <div class="checkSelect">
+      <%= f.label :mdreferral, 'MD Referral' %>
+      <%= f.check_box :mdreferral %>
+    </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :crutches %>
-    <%= f.label :crutches %>
-  </div>
+    <div class="checkSelect">
+      <%= f.label :crutches %>
+      <%= f.check_box :crutches %>
+    </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :instruction %>
-    <%= f.label :instruction %>
-  </div>
+    <div class="checkSelect">
+      <%= f.label :instruction %>
+      <%= f.check_box :instruction %>
+    </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :screen %>
-    <%= f.label :screen %>
-  </div>
+    <div class="checkSelect">
+      <%= f.label :screen %>
+      <%= f.check_box :screen %>
+    </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :erreferral %>
-    <%= f.label :erreferral, 'ER Referral' %>
+    <div class="checkSelect">
+      <%= f.label :erreferral, 'ER Referral' %>
+      <%= f.check_box :erreferral %>
+    </div>
   </div>
 
   <div class="field">
@@ -155,9 +165,11 @@
     <%= f.text_area :hospitalname %>
   </div>
 
-  <div class="checkSelect">
-    <%= f.check_box :notifiedparent %>
-    <%= f.label :notifiedparent, 'Notified Parent/Guardian' %>
+  <div class="checkBoxes">
+    <div class="checkSelect">
+      <%= f.label :notifiedparent, 'Notified Parent/Guardian' %>
+      <%= f.check_box :notifiedparent %>
+    </div>
   </div>
 
   <div class="field">
@@ -165,14 +177,33 @@
     <%= f.text_area :whomnotified %>
   </div>
 
-  <div class="field">
-    <%= f.label :datetime %>
-    <div class="dateSelect">
-      <%= f.datetime_select :datetime %>
+  <div class="date">
+    <%= f.label :date %>
+    <div class="dateSelect input-group date" id="datetimepicker4">
+      <%= f.text_field :date %>
+      <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+      </span>
     </div>
   </div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
+
+  <script type="text/javascript">
+    $(function () {
+      $('#datetimepicker2').datetimepicker({
+        format: 'YYYY/MM/DD'
+      });
+
+      $('#datetimepicker3').datetimepicker({
+        format: 'LT'
+      });
+
+      $('#datetimepicker4').datetimepicker({
+        format: 'YYYY/MM/DD LT'
+      });
+    });
+  </script>
 <% end %>

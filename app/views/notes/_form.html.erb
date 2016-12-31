@@ -13,13 +13,16 @@
 
   <div class="textField">
     <%= f.label :name %>
-    <%= f.text_area :name %>
+    <%= f.text_field :name %>
   </div>
 
   <div class="date">
     <%= f.label :date %>
-    <div class="dateSelect">
-      <%= f.datetime_select :date %>
+    <div class="dateSelect input-group date" id="datetimepicker1">
+      <%= f.text_field :date %>
+      <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+      </span>
     </div>
   </div>
 
@@ -31,5 +34,14 @@
   <div class="actions">
     <%= f.submit "Save" %>
   </div>
-  
+
+  <script type="text/javascript">
+    $(function () {
+      $('#datetimepicker1').datetimepicker({
+        format: 'YYYY/MM/DD LT',
+        showTodayButton: true,
+        showClear: true,
+      });
+    });
+  </script>
 <% end %>
