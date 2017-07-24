@@ -3,7 +3,7 @@
 
   <p>
     <strong>Date:</strong>
-    <%= @evaluation.date.strftime("%B %d") %>
+    <%= @evaluation.date.strftime("%Y-%m-%d") %>
   </p>
 
   <p>
@@ -153,7 +153,8 @@
 
   <p>
     <strong>Date/Time:</strong>
-    <%= @evaluation.datetime.strftime("%B %d @ %I:%M %p") %>
+    <%= @evaluation.date.strftime("%Y-%m-%d") %> &#64; 
+    <%= @evaluation.time.strftime("%I:%M %p") %>
   </p>
 
   <div class="btns">
